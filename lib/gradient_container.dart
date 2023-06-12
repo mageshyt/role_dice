@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:role_dice/box_text.dart';
+import 'package:role_dice/roll_dice.dart';
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   final List<Color> colors;
   const MyApp({
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: BoxText("Magesh Uchina "),
+        child: RollDice(),
       ),
     );
   }

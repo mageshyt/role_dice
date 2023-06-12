@@ -12,16 +12,13 @@ class BoxText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // add paddings
-      padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.all(20),
-
       // border radius
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10), color: Colors.white),
 
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+      ),
       child: Text(
-        'Hello $text',
+        text,
         style: const TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.bold,

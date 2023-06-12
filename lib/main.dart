@@ -13,7 +13,7 @@ void main() {
           body: MyApp(
             colors: [
               Color.fromARGB(255, 0, 0, 0),
-              Color.fromARGB(200, 0, 0, 0),
+              Color.fromARGB(198, 0, 0, 0),
             ], // black
           ),
         )),
