@@ -10,9 +10,6 @@ class RollDice extends StatefulWidget {
 }
 
 class _RollDiceState extends State<RollDice> {
-  // sate
-  StateSetter? _setState;
-
   // ignore: non_constant_identifier_names
   int active_dice = 1;
 
@@ -20,11 +17,13 @@ class _RollDiceState extends State<RollDice> {
     // ignore: avoid_print
     print('Roll Dice');
     // ignore: unnecessary_null_comparison
-    if (_setState != null) {
-      _setState!(() {
-        active_dice = 1 + (0 + DateTime.now().millisecond) % 6;
-      });
+    if (DateTime.now().millisecond == null) {
+      return;
     }
+
+    setState(() {
+      active_dice = 1 + (0 + DateTime.now().millisecond) % 6;
+    });
   }
 
   @override
